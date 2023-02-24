@@ -224,7 +224,7 @@
 }
 .contacts p, .contacts a {
   margin: 0;
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 .greeting {
@@ -497,7 +497,7 @@ input:checked+.switch_element:before {
     width: 50%;
   }
   .contacts p, .contacts a {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     margin: 0.3vw;
     display: block;
   }
