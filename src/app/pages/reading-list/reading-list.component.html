@@ -1,0 +1,24 @@
+<div class="regular_block">
+  <h1>Список книг</h1>
+  <p>На данной странице представлен список книг, которые ждут своей очереди, а также которые я уже прочитал. Ну так, если вам интересно...</p>
+
+  <div class="table_block">
+    <table border="1">
+      <tr class="head">
+        <td>Наименование книги</td>
+        <td>Автор(ы)</td>
+        <td>Статус</td>
+        <td>Комментарий</td>
+      </tr>
+      <tr *ngFor="let book of books">
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td class="{{ book.status.class }}">{{ book.status.title }}</td>
+        <td>{{ book.comment || '-' }}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="books-loading" *ngIf="!books.length">
+    <i class="fa fa-circle-notch fa-spin"></i>
+  </div>
+</div>

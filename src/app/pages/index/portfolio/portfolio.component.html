@@ -1,0 +1,15 @@
+<span id="portfolio"></span>
+<div class="section portfolio">
+  <h2 class="lang-portfolio">Портфолио</h2>
+  <p class="lang-portfolio-text">Все функционирующие веб-сайты, которые я когда-либо разрабатывал, представлены в данной секции.</p>
+  <div class="pf_list">
+    <div *ngFor="let website of websites" class="pf_item {{ website.key }}">
+      <div class="pf_item_info">
+        <p class="pf_item_info_header">{{ website.title }}</p>
+        <p class="pf_item_info_about_site lang-armoservis-text">{{ website.about }}</p>
+        <p class="pf_item_info_about_development lang-armoservis-extra">{{ website.devStory }}</p>
+        <a href="{{ website.link }}" class="button reversed lang-visit" target="_blank">Посетить</a>
+      </div>
+    </div>
+  </div>
+</div>

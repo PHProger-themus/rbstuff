@@ -1,0 +1,46 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about img {
+  width: 40%;
+  border-radius: 1vw;
+}
+.about_text {
+  width: 55%;
+}
+.about_text p {
+  font-size: 1.1vw;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:320px) and (max-width:800px) {
+
+  .about {
+    display: block;
+    text-align: center;
+  }
+  .about img {
+    width: 100%;
+    max-width: 384px;
+  }
+  .about_text {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .about_text p {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1250px) {
+
+  .about_text p {
+    font-size: 1.5vw;
+  }
+
+}

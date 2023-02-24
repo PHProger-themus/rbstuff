@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { StoreService } from './services/store.service'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'RBStuff-Angular';
+  public dark$ = this.store.dark$;
+
+  constructor(private store: StoreService) {
+  }
+
+  ngAfterViewInit() {
+    setTimeout(() => document.body.classList.add('trd'))
+  }
+
 }

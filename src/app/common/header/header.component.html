@@ -1,0 +1,86 @@
+<!--<div class="popup">
+  <div class="popup_yn hidden">
+    <h2 class="popup_header">Даровчик! Как вас зовут?</h2>
+    <p>Вы либо слишком долго не посещали наш сайт (я вас забыл), либо новичок - представьтесь, пожалуйста!</p>
+    <div class="input_block">
+      <input type="text" class="yn" placeholder="Имя и Фамилия" />
+      <p class="ierror hidden"></p>
+    </div>
+    <button class="button set_name">Готово!</button>
+  </div>
+</div>-->
+
+<div class="header">
+  <div class="cheader">
+    <div class="logo" routerLink="/">
+      <p class="main_text">RBStuff</p>
+      <p class="sec_text lang-collection">коллекция</p>
+    </div>
+    <div class="mobile_menu" (click)="toggleMenu(menu, hamburger)" #hamburger>
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom"></div>
+    </div>
+    <div class="mobile_dd" #menu>
+      <div class="menu">
+        <div class="menu_item">
+          <a class="smoothScroll lang-portfolio" routerLink="/" fragment="portfolio">
+            <i class="fas fa-briefcase"></i> Портфолио
+          </a>
+        </div>
+        <div class="menu_item">
+          <a href="#other" class="with_sub lang-another" (mouseenter)="showSubMenu(submenu)" (mouseleave)="hideSubMenu(submenu)" (click)="toggleSubMenu(submenu)">
+            <i class="fas fa-angle-down"></i>
+            Другие проекты
+          </a>
+          <div class="submenu hidden hidden_complete" #submenu (mouseenter)="showSubMenu(submenu)" (mouseleave)="hideSubMenu(submenu)">
+            <a href="bird" target="_blank" class="lang-bird">
+              <i class="fas fa-crow"></i>
+              Птичка
+            </a>
+            <a href="coursach" target="_blank" class="lang-course">
+              <i class="fas fa-building-columns"></i>
+              Курсач по ООП
+            </a>
+            <a href="diploma" target="_blank" class="lang-course">
+              <i class="fas fa-user-graduate"></i>
+              Диплом
+            </a>
+          </div>
+        </div>
+        <div class="menu_item">
+          <a routerLink="/reading-list" class="lang-books">
+            <i class="fas fa-book"></i>
+            Список книг
+          </a>
+        </div>
+      </div>
+      <div class="mobile_right_column">
+        <div class="contacts">
+          <p class="lang-questions">По всем вопросам:</p>
+          <a href="mailto:dreamfizik@gmail.com">
+            <i class="far fa-envelope"></i>
+            dreamfizik@gmail.com
+          </a>
+        </div>
+        <div class="extra">
+          <div class="theme">
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <div class="switch" [ngClass]="dark ? 'dark' : 'light'">
+              <input type="checkbox" [checked]="dark">
+              <span class="switch_element theme_switching" (click)="store.switchDark()"></span>
+            </div>
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </div>
+          <div class="lang">
+            <p class="lang_link" data-lang="ru" (click)="inProgress()">РУС</p>
+            <p class="lang_link" data-lang="en" (click)="inProgress()">ENG</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="greeting">
+    <p>Теперь работает на Angular!</p>
+  </div>-->
+</div>

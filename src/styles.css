@@ -1,1 +1,133 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+body, html {
+  cursor: url("assets/cursors/pointer.cur"), auto;
+}
+a, .lang_link {
+  cursor: url("assets/cursors/link.cur"), pointer;
+}
+body.trd {
+  transition: 0.3s;
+}
+body:has(.theme-definer.dark) {
+  background: #111111;
+  color: #bbbbbb;
+}
+a {
+  text-decoration: none;
+  color: #dc6600;
+  font-weight: 400;
+}
+.trd a {
+  transition: 0.3s;
+}
+a:not(.button):hover {
+  color: #efb07a;
+}
+h1, h2 {
+  font-size: 4vw;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
+h1.small {
+  font-size: 3vw;
+}
+.button {
+  background: #dc6600;
+  color: #fff;
+  padding: 0.5vw 1.5vw;
+  border-radius: 0.5vw;
+  display: inline-block;
+  margin: 1vw auto;
+  border: 0.15vw solid #dc6600;
+  font-size: 1vw;
+  cursor: url("assets/cursors/link.cur"), pointer;
+  font-family: 'Rubik';
+}
+.trd .button {
+  transition: 0.3s;
+}
+.button:hover, .button.reversed {
+  color: #dc6600;
+  background: none;
+}
+.button, .button.reversed:hover {
+  background: #dc6600;
+  color: #fff;
+}
+.trd .section {
+  transition: 0.6s;
+}
+.section.hidden {
+  transform: translateY(3vw);
+  opacity: 0;
+}
+input[type="text"] {
+  height: 2.5vw;
+  font-size: 1.2vw;
+  padding-left: 0.5vw;
+  font-family: 'Rubik';
+  border: 0.15vw solid #dc6600;
+  border-radius: 0.5vw;
+  outline: none;
+  box-sizing: border-box;
+}
+.mt-1 {
+  margin-top: 1vw;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 7vw;
+}
+
+/* MOBILE STYLES */
+
+@media screen and (min-width:320px) and (max-width:800px) {
+
+  h1, h2, h1.small {
+    font-size: 30px;
+  }
+  .container {
+    width: 90%;
+    margin-top: 100px;
+  }
+  .button {
+    padding: 6px 20px;
+    border-radius: 7px;
+    margin: 10px auto;
+    border: 2px solid #dc6600;
+    font-size: 17px;
+  }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1250px) {
+
+  h1, h2 {
+    font-size: 4.5vw;
+  }
+  .container {
+    margin-top: 12vw;
+  }
+  .button {
+    font-size: 1.5vw;
+  }
+
+}
+
+@media screen and (min-width:801px) {
+
+  .mobile_dd {
+    display: flex !important;
+  }
+
+}

@@ -1,0 +1,35 @@
+:host {
+  margin-top: auto;
+}
+.footer {
+  padding: 1.5vw;
+  margin-top: 2vw;
+  background: #dc6600;
+}
+.social {
+  text-align: center;
+  font-size: 2vw;
+}
+.social a {
+  color: #fff;
+  margin: 0 1vw;
+}
+.social a:hover {
+  color: #ffcea4;
+}
+
+@media screen and (min-width:320px) and (max-width:800px) {
+
+  .social {
+    font-size: 25px;
+  }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1250px) {
+
+  .social {
+    font-size: 2.5vw;
+  }
+
+}

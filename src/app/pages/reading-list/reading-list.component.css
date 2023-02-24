@@ -1,0 +1,79 @@
+.regular_block p {
+  font-size: 1.1vw;
+  font-weight: 200;
+}
+.books-loading {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 50px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 0.5vw;
+}
+td:first-child {
+  font-weight: 800;
+}
+table .head {
+  text-align: center;
+  background: #dc6600;
+  color: #fff;
+  font-weight: 800;
+}
+td.read {
+  background: #198119;
+  color: #fff;
+}
+td.reading {
+  background: #b7a000;
+  color: #fff;
+}
+td.planned {
+  background: #00b7b7;
+  color: #fff;
+}
+td.maybe {
+  background: #9d9d9d;
+  color: #fff;
+}
+td.postponed {
+  background: #433bc3;
+  color: #fff;
+}
+
+@media screen and (min-width:320px) and (max-width:800px) {
+
+  .regular_block p {
+    font-size: 17px;
+  }
+  .table_block {
+    overflow-x: scroll;
+  }
+  .table_block table {
+    width: 700px;
+  }
+  td {
+    padding: 7px;
+  }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1250px) {
+
+  .regular_block p {
+    font-size: 1.5vw;
+  }
+  .table_block {
+    overflow-x: auto;
+  }
+  .table_block table {
+    min-width: 700px;
+  }
+  td {
+    padding: 7px;
+  }
+
+}

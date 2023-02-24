@@ -1,0 +1,125 @@
+#portfolio {
+  display: block;
+  margin-top: 3vw;
+}
+.portfolio {
+  background: #dc6600;
+  border-radius: 1vw;
+  color: #fff;
+  font-weight: 200;
+  font-size: 1.1vw;
+  text-align: center;
+  padding-top: 3vw;
+}
+.pf_list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3vw;
+}
+.pf_item {
+  width: 32vw;
+  height: 26vw;
+  margin: 1vw 0;
+  position: relative;
+  border-radius: 1vw;
+}
+.pf_item.armoservis {
+  background: url("../../../../assets/images/armoservis.jpg");
+  background-position-x: center;
+  background-size: cover;
+}
+.pf_item.gk-gulfstream {
+  background: url("../../../../assets/images/gk-gulfstream.jpg");
+  background-position-x: center;
+  background-size: cover;
+}
+.pf_item.adanis {
+  background: url("../../../../assets/images/adanis.jpg");
+  background-position-x: center;
+  background-size: cover;
+}
+.pf_item.ru-sco {
+  background: url("../../../../assets/images/ru-sco.jpg");
+  background-position-x: center;
+  background-size: cover;
+}
+.pf_item_info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(255,255,255,0.9);
+  padding: 3vw 1vw;
+  transform: scale(0.95);
+  opacity: 0;
+  cursor: url("../../../../assets/cursors/pointer.cur"), pointer;
+  box-sizing: border-box;
+  border-radius: 1vw;
+  color: #000;
+  transition: 0.3s;
+}
+:host-context(.dark) .pf_item_info {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+.pf_item_info:hover {
+  transform: none;
+  opacity: 1;
+}
+.pf_item_info_header {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.pf_item_info_about_development {
+  font-size: 0.8vw;
+  margin: 0;
+}
+
+@media screen and (min-width:320px) and (max-width:800px) {
+
+  .portfolio {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .pf_item {
+    width: 250px;
+    height: 250px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  .pf_item_info {
+    transform: none;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 20px 10px;
+  }
+  .pf_item_info_header {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .pf_item_info_about_site {
+    margin: 10px 0;
+  }
+  .pf_item_info_about_development {
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1250px) {
+
+  .about_text p, .portfolio {
+    font-size: 1.5vw;
+  }
+  .pf_item_info_header {
+    margin: 0;
+  }
+  .pf_item_info_about_development {
+    font-size: 1.3vw;
+  }
+
+}
