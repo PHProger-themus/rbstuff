@@ -1,11 +1,9 @@
 <?php
-header('Access-Control-Allow-Origin: *');
 
-$db = mysqli_connect('localhost', 'root', 'root');
-mysqli_select_db($db, 'books');
+require_once "common.php";
 
 $response = [];
-$q = mysqli_query($db, "SELECT * FROM books");
+$q = mysqli_query($db, "SELECT * FROM books ORDER BY planned_order, read_order");
 while($r = mysqli_fetch_assoc($q)) {
   $response[] = $r;
 }

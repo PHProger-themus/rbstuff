@@ -1,19 +1,23 @@
 :host {
   margin-top: auto;
 }
+
 .footer {
   padding: 1.5vw;
   margin-top: 2vw;
   background: #dc6600;
 }
+
 .social {
   text-align: center;
   font-size: 2vw;
 }
+
 .social a {
   color: #fff;
   margin: 0 1vw;
 }
+
 .social a:hover {
   color: #ffcea4;
 }

@@ -32,9 +32,9 @@ const bookStatuses: Book['status'][] = [
 export class ReadingListComponent implements OnInit, OnDestroy {
 
   public books: Book[] = []
-  private subs: Subscription[] = []
+  private readonly subs: Subscription[] = []
 
-  constructor(private http: HttpClient) { }
+  constructor(private readonly http: HttpClient) { }
 
   ngOnInit(): void {
     this.subs.push(
